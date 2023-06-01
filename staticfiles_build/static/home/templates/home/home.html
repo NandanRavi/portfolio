@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class='mt-5'>
+    <div class="text-center">
+        <img src="{% static 'images/RaviNandan.jpeg' %}" alt="ProfilePic" class="img-thumbnail" width="150px" height="150px">
+    </div>
+    <div class='mt-5 text-white mx-5 text-justify'>
+        <h1 class='font-weight-bold fnt'>Hello</h1>
+        <div class='px-4' style='line-height:2rem;'>
+            <p style='text-indent:100px'>
+                I'm a <b class="text-warning">Python Developer</b>  am good with Python Programming and web development. I have done projects using python and its framework. Now I am looking forward for more challenges and real world work.
+
+                I am eager to learn new challenges in Python as a coder, Because it helps me to enhance to my capability and also help me to gain experience and full fill my goals I have completed my B.tech in 2023 from
+                Hindu College of Engineering in Computer Science and Engineering.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5">Hire Me</a>
+        <a href="https://rb.gy/7ig4w" class="btn btn-outline-warning my-3 mr-5" target="_blank">Resume</a>
+    </div>
+</div>
+
+{% endblock content %}

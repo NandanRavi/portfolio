@@ -1,0 +1,20 @@
+{% load static %}
+
+
+<div class="border-right border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'images/RaviNandan.jpeg' %}" alt="ProfilePic" class="img-fluid rounded-circle mt-5" width="80px">
+        <h3 class="text-white mt-3 fnt">Ravi Nandan</h3>
+    </div>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+        <a href="{% url 'projects' %}" class="nav-link {{projects}}">Project</a>
+        <a href="{% url 'skills' %}" class="nav-link {{skill}}">Skills</a>
+        <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact</a>
+    </nav>
+    <div class="text-center mt-5">
+        <a href="https://github.com/NandanRavi" target="_blank"><i class="fa-brands fa-github fa-2xl i-color mr-3 p-2"></i></a>
+        <a href="https://www.linkedin.com/in/ravi-nandan-pixel007/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl i-color mt-3 mr-3 p-2"></i></a>
+    </div>
+</div>
